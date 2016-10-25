@@ -37,25 +37,43 @@
     * Create your own at http://cspisawesome.com
     -->
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <title>Hello World commit Juan</title>
+    <title>Main Dable</title>
 </head>
 
 <body>
-    <div class="app">
-        <h1>PhoneGap</h1>
-        <div id="deviceready" class="blink">
-            <p class="event listening">Connecting to Device</p>
-            <p class="event received">Device is Ready</p>
-            <p>Hola Mundo</p>
-        </div>
-    </div>
+
+      <div class="row">
+   <div class="col s12">
+     <ul class="tabs">
+       <li class="tab col s3"><a href="#test1"><img src="img/timeline.svg"></a></li>
+       <li class="tab col s3"><a class="active" href="#test2">Test 2</a></li>
+       <li class="tab col s3"><a href="#test3">Disabled Tab</a></li>
+       <li class="tab col s3"><a href="#test4">Test 4</a></li>
+     </ul>
+   </div>
+   <div id="test1" class="col s12">Timeline</div>
+   <div id="test2" class="col s12">Amigos</div>
+   <div id="test3" class="col s12">Sueños</div>
+   <div id="test4" class="col s12">Sponsor</div>
+ </div>
+    <!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="js/jquery/jquery-2.1.1.min.js"></script>
+<!--https://code.jquery.com/jquery-2.1.1.min.js"-->
+<script type="text/javascript" src="js/materialize/materialize.min.js"></script>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">
         app.initialize();
     </script>
+
 </body>
 
 </html>
