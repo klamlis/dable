@@ -38,7 +38,7 @@
     -->
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
     <!--Import Google Icon Font-->
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 
@@ -49,21 +49,76 @@
 </head>
 
 <body>
+  <nav class="buttonsmaintab">
+   <div class="nav-wrapper ">
 
+     <div class="row ">
+     <div class="s12">
+<div class="col s4">
+  <form class="buscador">
+    <div class="input-field">
+      <input id="search" type="search" required>
+      <label for="search"><i class="material-icons">search</i></label>
+      <i class="material-icons">close</i>
+    </div>
+  </form>
+   </div>
+   <div class="col s4">
+    <img class="logomain" src="img/logo.svg">
+      </div>
+      <div class="col s4">
+        <div class="profilephoto"><img src="img/face.jpg"></div>
+         </div>
+
+ </div>
+  </div>
+ </div>
+ </nav>
       <div class="row">
-   <div class="col s12">
+   <div class="s12">
      <ul class="tabs">
-       <li class="tab col s3"><a href="#test1"><img src="img/timeline.svg"></a></li>
-       <li class="tab col s3"><a class="active" href="#test2">Test 2</a></li>
-       <li class="tab col s3"><a href="#test3">Disabled Tab</a></li>
-       <li class="tab col s3"><a href="#test4">Test 4</a></li>
+       <li class="tab col s3"><a class="active" href="#timeline"><img src="img/timeline.svg"></a></li>
+       <li class="tab col s3"><a href="#amigos"><img src="img/friends.svg"></a></li>
+       <li class="tab col s3"><a href="#suenos"><img src="img/dreams.svg"></a></li>
+       <li class="tab col s3"><a href="#sponsors"><img src="img/sponsors.svg"></a></li>
      </ul>
    </div>
-   <div id="test1" class="col s12">Timeline</div>
-   <div id="test2" class="col s12">Amigos</div>
-   <div id="test3" class="col s12">Sueños</div>
-   <div id="test4" class="col s12">Sponsor</div>
+   <div id="timeline" class="s12">
+     <div class="card">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="img/aruba.jpeg">
+      </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4">Vacaciones en Aruba<i class="material-icons right">more_vert</i></span>
+        <p><a href="#">This is a link</a></p>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+      </div>
+    </div>
+
+    <div class="card">
+     <div class="card-image waves-effect waves-block waves-light">
+       <img class="activator" src="img/cancun.jpg">
+     </div>
+     <div class="card-content">
+       <span class="card-title activator grey-text text-darken-4">Vacaciones en Cancún<i class="material-icons right">more_vert</i></span>
+       <p><a href="#">This is a link</a></p>
+     </div>
+     <div class="card-reveal">
+       <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+       <p>Here is some more information about this product that is only revealed once clicked on.</p>
+     </div>
+   </div>
+   </div>
+   <div id="amigos" class="col s12">Amigos</div>
+   <div id="suenos" class="col s12">Sueños</div>
+   <div id="sponsors" class="col s12">Sponsors</div>
  </div>
+
+
+
     <!--Import jQuery before materialize.js-->
 <script type="text/javascript" src="js/jquery/jquery-2.1.1.min.js"></script>
 <!--https://code.jquery.com/jquery-2.1.1.min.js"-->
